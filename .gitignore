@@ -2,4 +2,5 @@ psd
 slicing/node_modules
 
 slicing/app/bower
+slicing/dist
 slicing/.sass-cache

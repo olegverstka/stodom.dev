@@ -5,25 +5,19 @@
   "authors": [
     "olegverstka <olegverstka@gmail.com>"
   ],
-  "license": "MIT",
-  "moduleType": [],
-  "homepage": "http://webfrondev.ru/",
-  "private": true,
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "app/bower",
-    "test",
-    "tests"
-  ],
-  "devDependencies": {
+    "dependencies": {
+    "jquery": "1.11.2",
     "bourbon": "~4.2.6",
     "fancybox": "~2.1.5",
-    "jquery": "1.11.2",
     "bxslider-4": "bx-slider.js#~4.2.5",
-    "normalize-css": "normalize.css#~3.0.3",
-    "modernizr": "~3.2.0",
+    "Selecter": "~3.2.4",
+    "animate.css": "~3.5.0"
+  },
+  "devDependencies": {
+    "jquery": "1.11.2",
+    "bourbon": "~4.2.6",
+    "fancybox": "~2.1.5",
+    "bxslider-4": "bx-slider.js#~4.2.5",
     "Selecter": "~3.2.4",
     "animate.css": "~3.5.0"
   }
