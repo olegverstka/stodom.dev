@@ -14,6 +14,8 @@
 		<link rel="stylesheet" href="bower/bxslider-4/dist/jquery.bxslider.css" />
 		<link rel="stylesheet" href="bower/Selecter/jquery.fs.selecter.css" />
 		<link rel="stylesheet" href="bower/animate.css/animate.css" />
+		<link rel="stylesheet" href="bower/jquery-form-styler/jquery.formstyler.css" />
+		<link rel="stylesheet" href="bower/jquery-ui/themes/base/jquery-ui.min.css" />
 		<!-- endbower -->
 
 		<!-- Template CSS -->
@@ -108,6 +110,98 @@
 						<div class="col-md-3 sidebar">
 							<div class="block">
 								<p class="burning"><i></i>38 горящих предложений</p>
+							</div>
+							<div class="block">
+								<h2>Тип жилья</h2>
+								<div class="block-content">
+									<form action="#" method="POST">
+										<div class="form-row">
+											<label for="apartments" class="for-radio">
+												<input type="radio" name="" value="Квартиры" id="apartments" checked="checked" />
+												<span>Квартиры</span>
+											</label>
+										</div>
+										<div class="form-row">
+											<label for="rooms" class="for-radio">
+												<input type="radio" name="" value="Комнаты" id="rooms" />
+												<span>Комнаты</span>
+											</label>
+										</div>
+										<div class="form-row">
+											<label for="home" class="for-radio">
+												<input type="radio" name="" value="Дома" id="home" />
+												<span>Дома</span>
+											</label>
+										</div>
+										<div class="form-row">
+											<label for="beds" class="for-radio">
+												<input type="radio" name="" value="Койко-места" id="beds" />
+												<span>Койко-места</span>
+											</label>
+										</div>			
+									</form>
+								</div>
+							</div><!-- .block -->
+							<div class="block">
+								<h2>Количество комнат: от <input type="text" id="amount" class="kol_rooms" readonly></h2>
+								<div class="block_content">
+									<form action="#" method="POST">
+										<div id="slider-range-max"></div>
+									</form>
+								</div>
+							</div><!-- .block -->
+							<div class="block">
+								<h2>Цена за сутки (руб)</h2>
+								<div class="block_content">
+									<form action="#" method="POST">
+										<!-- <input type="text" id="amount2" class="kol_rooms" readonly> -->
+										<div class="rezult-slider">
+											<span id="amountLeft" class="left"></span>
+											<span id="amountRight" class="right"></span>
+										</div>
+										
+										<div id="slider-range"></div>
+									</form>
+								</div>
+							</div><!-- .block -->
+							<div class="block">
+								<h2>Удобства</h2>
+								<div class="block_content">
+									<form action="#" method="POST">
+										<div class="form-row">
+											<input type="checkbox" name="" value="">
+											<label for="">Кондиционер</label>
+										</div>
+										<div class="form-row">
+											<input type="checkbox" name="" value="">
+											<label for="">Стиральная машина</label>
+										</div>
+										<div class="form-row">
+											<input type="checkbox" name="" value="">
+											<label for="">Холодильник</label>
+										</div>
+										<div class="form-row">
+											<input type="checkbox" name="" value="">
+											<label for="">Интернет</label>
+										</div>
+										<div class="form-row">
+											<input type="checkbox" name="" value="">
+											<label for="">Лифт</label>
+										</div>
+										<div class="form-row">
+											<input type="checkbox" name="" value="">
+											<label for="">Парковка</label>
+										</div>
+										<div class="form-row">
+											<input type="checkbox" name="" value="">
+											<label for="">Можно курить</label>
+										</div>
+										<div class="form-row">
+											<input type="checkbox" name="" value="">
+											<label for="">Животные разрешены</label>
+										</div>
+									</form>
+								</div>
 							</div>
 						</div><!-- .sidebar -->
 						<div class="col-md-9 rigth_content">
@@ -341,6 +435,8 @@
 		<script src="bower/jquery/dist/jquery.js"></script>
 		<script src="bower/bxslider-4/dist/jquery.bxslider.js"></script>
 		<script src="bower/Selecter/jquery.fs.selecter.js"></script>
+		<script src="bower/jquery-form-styler/jquery.formstyler.min.js"></script>
+		<script src="bower/jquery-ui/jquery-ui.js"></script>
 		<!-- endbower -->
 
 		<script src="js/jquery.autocolumnlist.min.js"></script>
