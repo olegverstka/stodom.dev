@@ -195,30 +195,16 @@ $APPLICATION->SetTitle('Главная');
 	<section class="service">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4">
-					<div class="service-img">
-						<img src="<?=SITE_TEMPLATE_PATH?>/img/grafig.jpg" alt="">
-					</div>
-					<h3>Цены на недвижимость</h3>
-					<p>Узнайте, сколько стоит жилье в городах России. Интерестные графики</p>
-					<a class="btn" href="#">Подробнее</a>
-				</div>
-				<div class="col-md-4">
-					<div class="service-img">
-						<img src="<?=SITE_TEMPLATE_PATH?>/img/lamp.jpg" alt="">
-					</div>
-					<h3>Советы</h3>
-					<p>Полезная информация для продавцов, покупателей и арендаторов</p>
-					<a class="btn" href="#">Подробнее</a>
-				</div>
-				<div class="col-md-4">
-					<div class="service-img">
-						<img src="<?=SITE_TEMPLATE_PATH?>/img/mobile.jpg" alt="">
-					</div>
-					<h3>Мобильные приложения</h3>
-					<p>Скачайте бесплатные приложения для удобного поиска недвижимости</p>
-					<a class="btn" href="#">Подробнее</a>
-				</div>
+				<?$APPLICATION->IncludeComponent(
+					"bitrix:main.include",
+					"",
+					Array(
+						"AREA_FILE_SHOW" => "page",
+						"AREA_FILE_SUFFIX" => "service_main",
+						"COMPONENT_TEMPLATE" => ".default",
+						"EDIT_TEMPLATE" => ""
+					)
+				);?>
 			</div>
 		</div>
 	</section><!-- .service -->
@@ -227,9 +213,16 @@ $APPLICATION->SetTitle('Главная');
 			<div class="row">
 				<div class="text-wrap clearfix">
 					<div class="col-md-12">
-						<h2>Хотите снять жилье посуточно?</h2>
-						<p>
-							На сайте вы найдёте огромное количество интересных предложений по посуточной аренде жилья. В настоящее время здесь размещено более 30 тысяч объявлений от арендодателей из разных регионов России и других стран.  Вы получаете информацию из первых рук — арендодатели самостоятельно размещают здесь объявления о сдаче жилья на короткий срок. Общайтесь с ними напрямую без посредников! Все объявления проходят предварительную проверку перед публикацией, что позволяет вам видеть только лучшие предложения по аренде квартир, комнат и коттеджей. </p>
+						<?$APPLICATION->IncludeComponent(
+							"bitrix:main.include",
+							"",
+							Array(
+								"AREA_FILE_SHOW" => "page",
+								"AREA_FILE_SUFFIX" => "text_main",
+								"COMPONENT_TEMPLATE" => ".default",
+								"EDIT_TEMPLATE" => ""
+							)
+						);?>
 					</div>
 				</div>
 			</div>
@@ -239,10 +232,29 @@ $APPLICATION->SetTitle('Главная');
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/vk.jpg" alt="">
+					<?$APPLICATION->IncludeComponent(
+						"bitrix:main.include",
+						"",
+						Array(
+							"AREA_FILE_RECURSIVE" => "Y",
+							"AREA_FILE_SHOW" => "sect",
+							"AREA_FILE_SUFFIX" => "socleft",
+							"COMPONENT_TEMPLATE" => ".default",
+							"EDIT_TEMPLATE" => ""
+						)
+					);?>
 				</div>
 				<div class="col-md-6">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/fb.jpg" alt="">
+					<?$APPLICATION->IncludeComponent(
+						"bitrix:main.include",
+						"",
+						Array(
+							"AREA_FILE_SHOW" => "page",
+							"AREA_FILE_SUFFIX" => "socright",
+							"COMPONENT_TEMPLATE" => ".default",
+							"EDIT_TEMPLATE" => ""
+						)
+					);?>
 				</div>
 			</div>
 		</div>
