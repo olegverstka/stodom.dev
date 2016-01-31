@@ -1,5 +1,7 @@
 $(document).ready(function(){
-	$(".bxslider").bxSlider();
+	$(".bxslider").bxSlider({
+		'auto' : true
+	});
 
 	jQuery('.foot-menu ul').autocolumnlist({
 		columns: 2
